@@ -1,0 +1,129 @@
+@import "../../../scss/components/variable.scss";
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+header {
+  width: 576px;
+  height: 54px;
+  background-color: $backgroundColor;
+  margin: auto;
+  display: flex;
+}
+nav {
+  display: flex;
+  width: 100%;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 20px;
+}
+
+li {
+  list-style: none;
+  color: white;
+}
+
+li:nth-child(1) {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.logo-text {
+    color: #FFFFFF;
+    font-family: 'Space Mono', monospace;
+    width: 150px;
+    font-weight: bold;
+}
+
+.nft-menu {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+
+  .menu {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: 10px;
+    }
+
+    &:nth-child(3) {
+      top: 20px;
+    }
+  }
+
+  &:hover {
+    .menu:nth-child(1) {
+      transform: rotate(45deg);
+      top: 10px;
+    }
+
+    .menu:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu:nth-child(3) {
+      transform: rotate(-45deg);
+      top: 10px;
+    }
+  }
+}
+    .hide {
+      display: none;
+    }
+.menu:nth-child(2) {
+    width: 18px;
+}
+@media(min-width:768px){
+    header {
+        width:768px;
+    }
+
+}
+@media(min-width:1440px){
+    header{
+        width:1280px;
+        height: 100px;
+    }
+    .nft-menu{
+        display: none;
+    }
+    nav {
+      padding: 20px;
+    }
+       .hide {
+      display: block;
+    }
+}
+.btnSign {
+    width: 152px;
+    height: 60px;
+    background-color: #A259FF;
+    border: none;
+    border-radius: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.text-button{
+font-family: 'Work Sans', sans-serif;
+font-weight: 600;
+font-size: 16px;
+color:white;
+}
