@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap");
 header {
-  width: 576px;
+  width: 375px;
   height: 54px;
-  background-color: #2B2B2B;
   margin: auto;
   display: flex;
 }
@@ -119,4 +118,114 @@ li:nth-child(1) {
   font-weight: 600;
   font-size: 16px;
   color: white;
+}
+
+.banner {
+  margin-top: 20px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-text {
+  margin: auto;
+  font-weight: 600;
+  font-family: "Work Sans", sans-serif;
+  color: #FFF;
+  font-size: 28px;
+}
+
+.banner-description {
+  color: #FFF;
+  font-family: "Work Sans", sans-serif;
+  font-size: 17px;
+}
+
+.banner-card {
+  width: 315px;
+  height: 100%;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #3B3B3B;
+  margin: auto;
+  margin-left: 0;
+}
+
+.card-image {
+  width: 315px;
+  height: 216px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card-description {
+  margin-left: 15px;
+  font-weight: 600;
+  font-size: 22px;
+  font-family: "Work Sans", sans-serif;
+  color: #FFF;
+  margin-bottom: 0;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 15px;
+}
+
+.user-image {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.user-text {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFF;
+}
+
+.text-start {
+  font-weight: 600;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  color: #FFF;
+}
+
+.banner-button {
+  width: 315px;
+  height: 60px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: none;
+  background-color: #A259FF;
+  margin-top: 40px;
+}
+
+.banner-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.rating-span {
+  font-weight: 700;
+  font-size: 22px;
+  font-family: "Space Mono", monospace;
+}
+
+.rating-text {
+  display: flex;
+  flex-direction: column;
+  color: #FFF;
+}
+
+.container {
+  width: 375px;
+  height: 100vh;
+  background-color: #2B2B2B;
+  margin: auto;
 }

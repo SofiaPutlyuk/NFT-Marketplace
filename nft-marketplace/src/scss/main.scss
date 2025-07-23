@@ -1,2 +1,9 @@
 @import "../scss/components/variable";
 @import "../components/MainPage/Header/nft-header.scss";
+@import "../components/MainPage/Banner/nft-banner";
+.container {
+    width:375px;
+    height: 100vh;
+    background-color: $backgroundColor;
+    margin: auto;
+}
