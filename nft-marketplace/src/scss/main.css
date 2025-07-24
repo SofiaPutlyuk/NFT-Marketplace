@@ -172,6 +172,10 @@ li:nth-child(1) {
   margin-left: 15px;
 }
 
+.card-big {
+  display: none;
+}
+
 .user-image {
   width: 24px;
   height: 24px;
@@ -217,15 +221,93 @@ li:nth-child(1) {
   font-family: "Space Mono", monospace;
 }
 
+.hide-mobile {
+  display: none;
+}
+
 .rating-text {
   display: flex;
   flex-direction: column;
   color: #FFF;
 }
 
+@media (min-width: 768px) {
+  .banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    margin: 60px 60px 0 50px;
+  }
+  .hide-mobile {
+    display: block;
+  }
+  .card-image {
+    width: 330px;
+    height: 221px;
+  }
+  .banner-card {
+    width: 330px;
+  }
+  .banner-description {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .user-container {
+    margin-left: 10px;
+  }
+  .banner-text {
+    font-size: 38px;
+  }
+  .banner-button {
+    width: 224px;
+    height: 60px;
+  }
+  .hide-card {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .banner-card {
+    width: 510px;
+  }
+  .banner {
+    margin: 60px 60px 0 90px;
+  }
+  .card-image {
+    width: 510px;
+    height: 401px;
+  }
+  .banner-text {
+    font-size: 67px;
+  }
+  .banner-description {
+    font-size: 22px;
+    text-transform: capitalize;
+    width: 510px;
+  }
+  .banner-rating {
+    justify-content: space-between;
+    width: 500px;
+  }
+  .hide-card {
+    display: none;
+  }
+}
 .container {
   width: 375px;
   height: 100vh;
   background-color: #2B2B2B;
   margin: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    width: 1280px;
+  }
 }
